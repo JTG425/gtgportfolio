@@ -1,6 +1,6 @@
 /* [project]/src/app/componentstyles/navbar.css [app-client] (css) */
 .navbar-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -10,9 +10,104 @@
   box-shadow: var(--box-shadow);
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 10px;
   border-bottom: 1px solid var(--border);
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  width: 100%;
+  max-width: 970px;
+}
+
+.dropdown-content {
+  display: none;
+  width: 100%;
+  overflow: hidden;
+}
+
+.dropdown-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: var(--copy-lighter);
+  padding-bottom: 0;
+}
+
+.dropdown-links {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 0;
+  padding: 0;
+  padding-top: 1.5rem;
+  background-color: var(--foreground);
+  border-radius: var(--border-radius);
+}
+
+.dropdown-links button {
+  background-color: var(--foreground);
+  color: var(--copy-lighter);
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 0;
+  width: 100%;
+  min-width: 100vw;
+  height: 75px;
+  border-top: .5px solid var(--border);
+  border-bottom: .5px solid var(--border);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.dropdown-header-button {
+  cursor: pointer;
+  border: 1px solid var(--border);
+  border-radius: var(--border-radius);
+  padding: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-button {
+  padding: .5rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--border-radius);
+  background-color: var(--foreground);
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+@media (width <= 600px) {
+  .navbar-container {
+    padding: 0;
+  }
+
+  .navbar-content {
+    display: none;
+  }
+
+  .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=src_app_componentstyles_navbar_b52d8e.css.map*/

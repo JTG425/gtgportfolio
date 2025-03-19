@@ -136,10 +136,37 @@
   .home-header {
     flex-direction: column;
     align-items: center;
+    padding-top: 1rem;
+  }
+
+  .home-header-child:first-child {
+    border: none;
+    background: none;
+    box-shadow: none;
   }
 
   .home-header-child {
     width: 100%;
+    border-radius: 0;
+  }
+
+  .home-content {
+    border-radius: 0;
+  }
+
+  .home-content-inline {
+    border-radius: 0;
+  }
+
+  .resume-button {
+    border-radius: 0;
+  }
+
+  .linkedin-button {
+    border-radius: 0;
+  }
+
+  .gmail-button {
     border-radius: 0;
   }
 }
