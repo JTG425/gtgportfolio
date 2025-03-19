@@ -19,9 +19,8 @@ export default function NavBar() {
       borderRadius: "var(border-radius)" 
     },
     hovered: {
-      background: "var(--primary-light)",
-      color: "var(--foreground)",
-      scale: 1.1,
+      background: "var(--background)",
+      color: "var(--copy)",
       borderRadius: "var(--border-radius)" 
     },
   };

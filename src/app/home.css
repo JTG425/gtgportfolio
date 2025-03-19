@@ -6,6 +6,7 @@
     align-items: center;
     gap: 1rem;
     margin-bottom: 1rem;
+
 }
 
 .home-header-child {
@@ -14,25 +15,37 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    padding: 1rem;
     background: var(--foreground);
     border-radius: var(--border-radius);
     max-width: 1000px;
-    min-height: 250px;
+    min-height: 175px;
     text-align: justify;
     box-shadow: var(--box-shadow);
     color: var(--copy);
+    border: 1px solid var(--border);
+}
+
+.home-header-child img {
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.home-header-child p {
+  font-size: 20px;
+  line-height: 1.25;
+  padding: 1rem;
 }
 
 .home-content {
   width: 100%;
+  height: 150px;
   background: var(--foreground);
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
-  padding: 1rem;
-  gap: 1rem;
+  padding: 0;
+  gap: 0;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   margin-bottom: 1rem;
@@ -46,6 +59,62 @@
 
 .home-photo-container {
   width: 100%;
+}
+
+.linkedin-button {
+  border: 0.5px solid var(--border);
+  border-top-right-radius: var(--border-radius);
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gmail-button {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-top: 0.5px solid var(--border);
+  border-left: 0.5px solid var(--border);
+  border-bottom-right-radius: var(--border-radius);
+
+}
+
+.home-content-inline {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0rem;
+  padding: 0rem;
+  border: 0.5px solid var(--border);
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  border-left: none;
+  
+}
+
+.resume-button {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-right: 0.5px solid var(--border);
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  
 }
 
 .home-photo-grid {
@@ -62,6 +131,8 @@
   width: 300px;
   height: auto;
 }
+
+
 
 
 @media (max-width: 600px) {

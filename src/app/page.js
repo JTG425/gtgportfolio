@@ -4,12 +4,17 @@ import { motion as m } from 'motion/react';
 import PDFViewer from "./components/pdfViewer";
 import { useState } from "react";
 import { AnimatePresence } from "motion/react";
-import Marquee from "react-fast-marquee";
 import Image from "next/image";
+import { FaLinkedin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+
+
+
 
 
 export default function Home() {
-    // Javacript code goes here
+    const storagePrefix = process.env.BLOB_IMAGE_PREFIX;
+    const images = []
 
     const [showResume, setShowResume] = useState(false); // Show Project Popup
     const handleShowResume = () => {
@@ -30,8 +35,12 @@ export default function Home() {
                 {/* <h1>Gregory Golonka</h1> */}
                 <div className="home-header">
                     <div className="home-header-child">
-                        <img src="/profile-pic.jpg"
-                            width={200}></img>
+                        <Image
+                            src="https://xtbw2pvhfmxic82d.public.blob.vercel-storage.com/images/profile-pic.webp"
+                            width={175}
+                            height={175}
+                            alt="profile-pic"
+                        />
                     </div>
                     <div className="home-header-child">
                         <p>
@@ -45,11 +54,10 @@ export default function Home() {
                     <m.button
                         key="resume-button-key"
                         className="resume-button"
-                        whileHover={{ scale: 1.02 }}
-                        whileTap={{ scale: 0.98 }}
+                        whileHover={{ background: "var(--background)" }}
                         onClick={() => handleShowResume()}
                     >
-                        <p>View Resume</p>
+                        <p>My Resume</p>
                     </m.button>
                     {showResume && (
                         <PDFViewer
@@ -58,26 +66,39 @@ export default function Home() {
                             setShowPDF={setShowResume}
                         />
                     )}
-                    <a href="https://www.linkedin.com/in/ggolonka/" target="_blank" rel="noopener noreferrer" className="linkedin-button">
-                        <img src="linkedin.png" className="linkedin-pic"></img> {/* TODO: USE React Icons Or another Icon Library to reduce build size */}
-                    </a>
-                    <a href="mailto:gtgolonka91602@gmail.com" className="gmail-button">
-                        <img src="gmail.png" className="gmail-pic"></img> {/* Same As Above!! */}
-                    </a>
+                    <span className="home-content-inline">
+                        <m.a
+                            href="https://www.linkedin.com/in/ggolonka/" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="linkedin-button"
+                            whileHover={{ background: "var(--background)" }}
+                        >
+                            <FaLinkedin size={45} fill="var(--copy)" />
+                        </m.a>
+                        <m.a
+                            href="mailto:gtgolonka91602@gmail.com"
+                            className="gmail-button"
+                            whileHover={{ background: "var(--background)" }}
+                        >
+                            <MdEmail size={45} fill="var(--copy)" />
+                        </m.a>
+                    </span>
 
                 </div>
                 <div className="home-photo-container">
                     <div className="home-photo-grid">
-                        {/*Changed to next Image for optimzed loading... going to migrate all images to blob storage */}
-                        <Image alt="abroud" src="/abroad.jpg" width={200} height={200} className="gallery-photo" />
-                        <Image alt="dol2" src="/dol2.png" width={200} height={200} className="gallery-photo" />
-                        <Image alt="cin" src="/cin.png" width={200} height={200} className="gallery-photo" />
-                        <Image alt="dol" src="/dol.png" width={200} height={200} className="gallery-photo" />
-                        <Image alt="aca" src="/aca.png" width={200} height={200} className="gallery-photo" />
-                        <Image alt="game" src="/game.png" width={200} height={200} className="gallery-photo" />
-                        <Image alt="game2" src="/game2.png" width={200} height={200} className="gallery-photo" />
-                        <Image alt="eng" src="/eng.png" width={200} height={200} className="gallery-photo" />
-                        <Image alt="pal" src="/pal.png" width={200} height={200} className="gallery-photo" />
+                        {images.map((image, index) => (
+                            <Image
+                                key={`home-image-${index}`}
+                                alt={image}
+                                src={`${storagePrefix}${image}`}
+                                width={200}
+                                height={200}
+                                className="gallery-photo"
+                            />
+
+                        ))}
                     </div>
                 </div>
             </m.div>

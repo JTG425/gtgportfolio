@@ -231,6 +231,7 @@ button {
   align-items: center;
   justify-content: flex-end;
   gap: 10px;
+  border-bottom: 1px solid var(--border);
 }
 
 
