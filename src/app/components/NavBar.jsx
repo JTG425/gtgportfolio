@@ -38,7 +38,7 @@ export default function NavBar() {
       height: "85px",
     },
     show: {
-      height: "393px",
+      height: "480px",
       transition: {
         when: "beforeChildren",
         staggerChildren: 0.1,

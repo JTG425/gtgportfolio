@@ -54,7 +54,9 @@ export default function Home() {
                     <m.button
                         key="resume-button-key"
                         className="resume-button"
-                        whileHover={{ background: "var(--background)" }}
+                        whileHover={{ 
+                                background: "var(--background)" 
+                        }}
                         onClick={() => handleShowResume()}
                     >
                         <p>My Resume</p>
@@ -74,14 +76,14 @@ export default function Home() {
                             className="linkedin-button"
                             whileHover={{ background: "var(--background)" }}
                         >
-                            <FaLinkedin size={45} fill="var(--copy)" />
+                            <FaLinkedin size={45} fill="var(--copy-lighter)" />
                         </m.a>
                         <m.a
                             href="mailto:gtgolonka91602@gmail.com"
                             className="gmail-button"
                             whileHover={{ background: "var(--background)" }}
                         >
-                            <MdEmail size={45} fill="var(--copy)" />
+                            <MdEmail size={45} fill="var(--copy-lighter)" />
                         </m.a>
                     </span>
 

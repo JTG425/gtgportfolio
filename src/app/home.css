@@ -69,6 +69,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: var(--foreground);
 }
 
 .gmail-button {
@@ -81,6 +82,7 @@
   border-top: 0.5px solid var(--border);
   border-left: 0.5px solid var(--border);
   border-bottom-right-radius: var(--border-radius);
+  background: var(--foreground);
 
 }
 
@@ -114,6 +116,7 @@
   border-bottom-left-radius: var(--border-radius);
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+  background: var(--foreground);
   
 }
 

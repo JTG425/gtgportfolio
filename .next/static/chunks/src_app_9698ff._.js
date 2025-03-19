@@ -297,7 +297,7 @@ function Home() {
                                 children: "My Resume"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/page.js",
-                                lineNumber: 60,
+                                lineNumber: 62,
                                 columnNumber: 25
                             }, this)
                         }, "resume-button-key", false, {
@@ -311,7 +311,7 @@ function Home() {
                             setShowPDF: setShowResume
                         }, void 0, false, {
                             fileName: "[project]/src/app/page.js",
-                            lineNumber: 63,
+                            lineNumber: 65,
                             columnNumber: 25
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$5_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -327,15 +327,15 @@ function Home() {
                                     },
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$5_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$2d$icons$40$5$2e$5$2e$0_react$40$19$2e$0$2e$0$2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaLinkedin"], {
                                         size: 45,
-                                        fill: "var(--copy)"
+                                        fill: "var(--copy-lighter)"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/page.js",
-                                        lineNumber: 77,
+                                        lineNumber: 79,
                                         columnNumber: 29
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/page.js",
-                                    lineNumber: 70,
+                                    lineNumber: 72,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$5_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$40$11$2e$18$2e$2_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].a, {
@@ -346,21 +346,21 @@ function Home() {
                                     },
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$5_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$2d$icons$40$5$2e$5$2e$0_react$40$19$2e$0$2e$0$2f$node_modules$2f$react$2d$icons$2f$md$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MdEmail"], {
                                         size: 45,
-                                        fill: "var(--copy)"
+                                        fill: "var(--copy-lighter)"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/page.js",
-                                        lineNumber: 84,
+                                        lineNumber: 86,
                                         columnNumber: 29
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/page.js",
-                                    lineNumber: 79,
+                                    lineNumber: 81,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/page.js",
-                            lineNumber: 69,
+                            lineNumber: 71,
                             columnNumber: 21
                         }, this)
                     ]
@@ -381,17 +381,17 @@ function Home() {
                                 className: "gallery-photo"
                             }, `home-image-${index}`, false, {
                                 fileName: "[project]/src/app/page.js",
-                                lineNumber: 92,
+                                lineNumber: 94,
                                 columnNumber: 29
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/app/page.js",
-                        lineNumber: 90,
+                        lineNumber: 92,
                         columnNumber: 21
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/page.js",
-                    lineNumber: 89,
+                    lineNumber: 91,
                     columnNumber: 17
                 }, this)
             ]

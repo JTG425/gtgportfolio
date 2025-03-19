@@ -256,7 +256,8 @@ button {
   align-items: center;
   padding: 1rem;
   color: var(--copy-lighter);
-  padding-bottom: 0;
+  padding-bottom: 1.5rem;
+  overflow: visible;
 }
 
 .dropdown-links {
@@ -265,9 +266,9 @@ button {
   justify-content: flex-start;
   align-items: flex-end;
   flex-direction: column;
-  gap: 0;
+  gap: 1rem;
   padding: 0;
-  padding-top: 1.5rem;
+  padding-top: .5rem;
   background-color: var(--foreground);
   border-radius: var(--border-radius);
 }
