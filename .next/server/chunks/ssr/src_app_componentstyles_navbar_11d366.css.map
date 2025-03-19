@@ -2,6 +2,6 @@
   "version": 3,
   "sources": [],
   "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///Users/joshuagolonka/Documents/GitHub/gtportfolio/src/app/componentstyles/navbar.css"],"sourcesContent":["/* Container for the entire navbar */\n.navbar-container {\n    position: absolute;\n    top: 0;\n    left: 0;\n    right: 0;\n    padding: 1rem;\n    z-index: 2;\n    background-color: var(--foreground);\n    box-shadow: var(--box-shadow);\n    display: flex;\n    align-items: center;\n    justify-content: flex-end;\n    gap: 10px;\n  }\n\n\n  "],"names":[],"mappings":"AACA"}},
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///Users/joshuagolonka/Desktop/gtportfolio/src/app/componentstyles/navbar.css"],"sourcesContent":["/* Container for the entire navbar */\n.navbar-container {\n    position: absolute;\n    top: 0;\n    left: 0;\n    right: 0;\n    padding: 1rem;\n    z-index: 2;\n    background-color: var(--foreground);\n    box-shadow: var(--box-shadow);\n    display: flex;\n    align-items: center;\n    justify-content: flex-end;\n    gap: 10px;\n  }\n\n\n  "],"names":[],"mappings":"AACA"}},
     {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
 }
