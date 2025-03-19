@@ -1,0 +1,40 @@
+
+.contact-parent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+
+}
+.contact.child{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-button{
+    display: flex;
+    flex-direction:row;
+    gap: 1rem;
+    align-items: center;
+    height: 70px ;
+    width: 300px ;
+    background-color: var(--backgroundwords);  
+    border-radius: var(--border-radius);
+    
+
+}
+
+@media screen and (max-width: 600px) {
+    
+.contact-parent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+
+}
+}
+
