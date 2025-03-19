@@ -172,13 +172,10 @@ export default function Projects() {
                      My work ranges from analyzing viscous shock waves with molecular dissociation to designing and optimizing RC aircraft. With hands-on 
                      experience in wind tunnel testing, computational simulations, and engineering design, I am particularly interested in high-speed aerodynamics, 
                      propulsion, and mechanical systems.
-                    <hr />
                     <br />
                     To explore each project in greater detail, please use the <i>Course Selector</i> menu, which organizes completed projects by their respective courses.</p>}
                     
-                  {selectedDescription && <p>
-                    <hr className="page-line"></hr>{selectedDescription}
-                  <hr className="page-line"></hr></p>}
+                  {selectedDescription && <p>{selectedDescription}</p>}
                   
                 </div>
                 {classCode !== "Course Selector" && selectedPicture && (

@@ -1,7 +1,7 @@
 "use client";
 import "./about.css";
 import { motion as m, AnimatePresence } from "motion/react";
-
+import Marquee from "react-fast-marquee";
 export default function About() {
   // Javacript code goes here
 
@@ -92,8 +92,13 @@ export default function About() {
         </div>
 
 
-        <hr className="about-line" />
         <div className="about-photo-grid">
+          <Marquee 
+            autoFill={true} 
+            gradient={true}
+            gradientColor="var(--background)"
+            gradientWidth={50}
+          > 
           <img src={"hockey1.jpg"} className="gallery-photo" />
           <img src={"golf.jpg"} className="gallery-photo" />
           <img src={"surf.JPG"} className="gallery-photo" />
@@ -101,6 +106,7 @@ export default function About() {
           <img src={"gracegame.jpg"} className="gallery-photo" />
           <img src={"hike4.jpg"} className="gallery-photo" />
           <img src={"Grace.jpg"} className="gallery-photo" />
+          </Marquee>
         </div>
 
       </m.div>
